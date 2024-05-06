@@ -1,10 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
-const ownerController = require('./controller/owner')
-const guestController = require('./controller/guest')
+const adminController = require('./controller/admin')
+const orderController = require('./controller/order')
+const menuController = require('./controller/menu')
 
-router.use('/owner', ownerController)
-router.use('/guest', guestController)
+router.use('/admin', adminController)
+router.use('/order', orderController)
+router.use('/menu', menuController)
 
 module.exports = router
